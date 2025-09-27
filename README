@@ -1,0 +1,16 @@
+This repository contains models finetuned for Marathi. We want to focus on models that can be run on mobile devices and hence 
+The models have been trained on Marathi data set of over 10 GB data. 
+There are three models: gpt2_base, gpt2_medium, gpt2_large.
+Neither of these models were trained for Marathi out of the box. When prompted in Marathi, they produce output in Hindi and English (That was a surprise to me as they were not trained in Hindi either - at least officially)
+
+The base model is more or less meaningless for any practical purposes as it has failed to produce any meaningful output. The best accuracy for the training set topped at 83% but test and validation was limited to 62%. 
+Just goes to show that the number of paramters is too small to learn a language.
+
+The medium model suffered from similar issues as base. It produced Hindi, albeit better than the first model. Our model does well in Marathi - scores high, and produces meaningful output. 
+With more diverse dataset, should be usable on phone for certain applications. 
+
+The large model was the most GPU expensive. It produces the best results of all. 
+
+The need of the hour is good datasets and that is what we are working on. We welcome participation from students, professionals and educational institutions to build better data sets so more models can be trained.
+
+Feel free to reach out at anandjoshi1 at gmail dot com with your questions. 
