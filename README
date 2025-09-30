@@ -1,15 +1,18 @@
-This repository contains models finetuned for Marathi. We want to focus on models that can be run on mobile devices and hence 
-The models have been trained on Marathi data set of over 10 GB data. 
-There are three models: gpt2_base, gpt2_medium, gpt2_large.
-Neither of these models were trained for Marathi out of the box. When prompted in Marathi, they produce output in Hindi and English (That was a surprise to me as they were not trained in Hindi either - at least officially)
+October 5, 2025
+This repository contains models finetuned for Marathi. OUr goal is to publish open models that can be run on mobile and PC class devices and we'll be releaseing several in coming days. These models will be fully open sources so you'll have access to data and model.
 
-The base model is more or less meaningless for any practical purposes as it has failed to produce any meaningful output. The best accuracy for the training set topped at 83% but test and validation was limited to 62%. 
-Just goes to show that the number of paramters is too small to learn a language.
+There are three models we are publishing here today: gpt2_base, gpt2_medium, gpt2_large.
+Neither of these models were trained for Marathi out of the box. When prompted in Marathi, they produce output in Hindi and English (That was a surprise to me as they were not trained in Hindi either - at least officially). The inference script allows you to experiment with them out-of-the-box so you can draw your own conclusions.
 
-The medium model suffered from similar issues as base. It produced Hindi, albeit better than the first model. Our model does well in Marathi - scores high, and produces meaningful output. 
+The base model is more or less meaningless for any practical purposes as it has only 124 million parameters. In general, it didn't produce any meaningful output. The best accuracy for the training set topped at 83% but test and validation was limited to 62%. 
+It is included here for the sake of completeness.
+
+The medium model starts performing better. The out-of-box model produces Hindi, for whatever reason. Our model does well in Marathi - scores high, and produces meaningful output. 
 With more diverse dataset, should be usable on phone for certain applications. 
 
-The large model was the most GPU expensive. It produces the best results of all. 
+The large model was the most GPU expensive to train but produces the best results of all. It generates text near flawlessly that can be used in many applications. This one has 774 million parameters, so one can fit this in ~1.6GB RAM, unquantized.
+
+The extra-large model, with 1.6 billion parameters is still being trained, but should outperform all.
 
 The need of the hour is good datasets and that is what we are working on. We welcome participation from students, professionals and educational institutions to build better data sets so more models can be trained.
 
