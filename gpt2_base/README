@@ -1,3 +1,4 @@
 This director contains the inference script to run the base model and weights.
 Note that base model has 124 million parameters and falls generally short of expectations for good Marathi sentences. 
 It is provided here for the sake of completeness.
+It is also coded in Keras and easier to understand.
