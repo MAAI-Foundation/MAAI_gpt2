@@ -1,2 +1,5 @@
 Download Keras weights file from here in h5 format.
 https://jpdata1-my.sharepoint.com/:u:/g/personal/anand_jpdata_co/EdZoOMtxjWRNuOdiuQwrmDkByQXeYJlyWUDsrSSWfAsCyw?e=EhmonN
+TO load in Colab directly, use:
+
+!wget --no-check-certificate "https://jpdata1-my.sharepoint.com/:u:/g/personal/anand_jpdata_co/EdZoOMtxjWRNuOdiuQwrmDkByQXeYJlyWUDsrSSWfAsCyw?e=Rt2VVU&download=1" -O MAAI_gpt2_base_50.weights.h5
