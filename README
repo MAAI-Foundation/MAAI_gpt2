@@ -19,3 +19,5 @@ Update Oct9, 2025
 - Added inference scripts in each of the gpt directories. The script works well on Colab. The only issues I ran into were with Torch installation.
 - Updated weights file.
 - Updated base Keras file. Use this to learn.
+
+Note: We would like to express gratitude to AMD for providing GPUs for this project. The PyTorch instance worked flawlessly. Thank you!
